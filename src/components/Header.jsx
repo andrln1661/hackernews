@@ -10,7 +10,9 @@ function Header() {
     <div className="header orange">
       <div className="header__links">
         <Link to="/">Hacker News</Link>
-        {authToken && <Link to="create" >Create</Link>}
+        {authToken && <Link to="create">Create</Link>}
+        <Link to="search">Search</Link>
+        <Link to="top">Top</Link>
         <div>|</div>
         {authToken ? (
           <div
@@ -23,7 +25,7 @@ function Header() {
             Logout
           </div>
         ) : (
-          <Link to="/login">Login</Link>
+          <Link to="login">Login</Link>
         )}
       </div>
     </div>

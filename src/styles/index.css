@@ -74,6 +74,30 @@ input {
   padding: 10px 5px;
 }
 
+.link {
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  border-bottom: 1px solid rgb(56, 56, 58);
+  gap: 10px;
+}
+
+.voter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.clicker {
+  cursor: pointer;
+  color: gray;
+  font-size: 20px;
+}
+
+.link > .info {
+  display: flex;
+  flex-direction: column;
+}
+
 .createlink {
   padding: 50px;
 }
@@ -106,4 +130,16 @@ input {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px ;
+}
+
+.search > button {
+  width: 80px;
 }
